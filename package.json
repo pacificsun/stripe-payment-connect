@@ -1,0 +1,9 @@
+{
+  "name": "stripe-payment-connect",
+  "version": "1.0.0",
+  "description": "market place using stripe connect and payout to community admin ",
+  "main": "index.js",
+  "repository": "https://github.com/pacificsun/stripe-payment-connect.git",
+  "author": "Suraj Thapa <stsurajst@gmail.com>",
+  "license": "MIT"
+}
