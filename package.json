@@ -5,5 +5,11 @@
   "main": "index.js",
   "repository": "https://github.com/pacificsun/stripe-payment-connect.git",
   "author": "Suraj Thapa <stsurajst@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "config": "^3.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
 }
