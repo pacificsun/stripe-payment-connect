@@ -1,7 +1,21 @@
 const express = require('express');
 const chalk = require('chalk');
 
+const connectDB = require('./config/db');
+
 const app = express();
+// connect to mongoDB
+connectDB();
+
+// Init Middleware // used for body parser
+app.use(express.json({ extended: false }));
+
+// Define Routes
+app.use(
+  'api/create-stripe-account',
+  require('./routes/api/createStripeAccount')
+);
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () =>
