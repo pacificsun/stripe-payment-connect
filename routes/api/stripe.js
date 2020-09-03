@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { createAccount } = require('../../utils/stripe_functions/');
+const { createAccount } = require('../../utils/stripe_functions');
 
 // @route GET api/stripe/createAccount
 // @desc Test route

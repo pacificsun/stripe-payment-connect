@@ -11,10 +11,7 @@ connectDB();
 app.use(express.json({ extended: false }));
 
 // Define Routes
-app.use(
-  'api/stripe/createAccount',
-  require('./routes/api/createStripeAccount')
-);
+app.use('api/stripe/createAccount', require('./routes/api/stripe'));
 
 const PORT = process.env.PORT || 5000;
 
