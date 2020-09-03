@@ -12,7 +12,7 @@ app.use(express.json({ extended: false }));
 
 // Define Routes
 app.use(
-  'api/create-stripe-account',
+  'api/stripe/createAccount',
   require('./routes/api/createStripeAccount')
 );
 
