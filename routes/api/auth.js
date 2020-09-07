@@ -1,5 +1,10 @@
 const express = require('express');
-
 const router = express.Router();
 
-router.use('/', (req, res) => {});
+// @route GET api/posts
+// @desc Test Route
+// @access Public
+
+router.get('/', (req, res) => res.send('Get auth'));
+
+module.exports = router;
